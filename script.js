@@ -82,3 +82,7 @@ function showResult(prediction){
     document.getElementById("prediction").innerHTML = result
     document.getElementById("recommendation").innerHTML = rec
 }
+
+function toggleDarkMode(){
+    document.body.classList.toggle("dark")
+}
