@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Skin Detection</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Skin Detection</h1>
+
+<input type="file" id="imageUpload" onchange="previewImage()">
+<button onclick="predictImage()">Predict Image</button>
+<button onclick="startCamera()">Start Camera</button>
+
+<br><br>
+
+<img id="preview" width="300" style="display:none">
+
+<div id="webcam-container"></div>
+
+<h2 id="prediction"></h2>
+<p id="recommendation"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
