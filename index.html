@@ -4,6 +4,8 @@
     <title>AI Skin Sense</title>
     <link rel="stylesheet" href="style.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest"></script>
 </head>
@@ -23,10 +25,13 @@
         <button class="btn camera" onclick="startCamera()">Start Camera</button>
     </div>
 
+    <!-- IMAGE PREVIEW -->
     <div class="preview-section">
         <img id="preview" width="250" style="display:none">
-        <div id="webcam-container"></div>
     </div>
+
+    <!-- IMPORTANT: CAMERA CONTAINER -->
+    <div id="webcam-container"></div>
 
     <div class="result-card">
         <h2 id="prediction">Prediction will appear here</h2>
