@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AI Skin Detection</title>
+    <title>AI Skin Sense</title>
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
@@ -12,20 +12,26 @@
 
 <div class="container">
 
-<h1>AI Skin Detection</h1>
+    <h1>✨ AI Skin Sense</h1>
+    <p class="subtitle">Smart Skin Type Detection & Care Recommendation</p>
 
-<input type="file" id="imageUpload" onchange="previewImage()">
-<button onclick="predictImage()">Predict Image</button>
-<button onclick="startCamera()">Start Camera</button>
+    <button class="toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
 
-<br><br>
+    <div class="upload-box">
+        <input type="file" id="imageUpload" onchange="previewImage()">
+        <button class="btn" onclick="predictImage()">Predict Image</button>
+        <button class="btn camera" onclick="startCamera()">Start Camera</button>
+    </div>
 
-<img id="preview" width="300" style="display:none">
+    <div class="preview-section">
+        <img id="preview" width="250" style="display:none">
+        <div id="webcam-container"></div>
+    </div>
 
-<div id="webcam-container"></div>
-
-<h2 id="prediction"></h2>
-<p id="recommendation"></p>
+    <div class="result-card">
+        <h2 id="prediction">Prediction will appear here</h2>
+        <p id="recommendation">Skin care recommendation will appear here</p>
+    </div>
 
 </div>
 
